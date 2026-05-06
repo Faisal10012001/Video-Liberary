@@ -16,7 +16,7 @@ export function UserRegister() {
         },
         onSubmit: (newUser) => {
             // 🔹 THE FIX: Use POST to send data to the database
-            axios.post('http://localhost:5050/register-user', newUser)
+            axios.post('https://video-liberary.onrender.com/register-user', newUser)
                 .then(() => {
                     alert("Registration Successful!");
                     navigate('/user-login'); // Take them to login after registering

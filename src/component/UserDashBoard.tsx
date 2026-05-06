@@ -14,7 +14,7 @@ export function UserDashBoard() {
 
     // 🔹 Load Videos from API
     function loadVideos() {
-        axios.get('http://localhost:5050/get-videos')
+        axios.get('https://video-liberary.onrender.com/get-videos')
             .then(response => {
                 setVideos(response.data);
             })

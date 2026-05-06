@@ -32,7 +32,7 @@ export function EditVideo() {
         onSubmit: (updatedVideo) => {
 
             axios.put(
-                `http://localhost:5050/edit-video/${params.id}`,
+                `https://video-liberary.onrender.com/edit-video/${params.id}`,
                 updatedVideo
             )
             .then(() => {
@@ -50,7 +50,7 @@ export function EditVideo() {
     // ✅ Load Categories
     function loadCategories() {
 
-        axios.get("http://localhost:5050/get-categories")
+        axios.get("https://video-liberary.onrender.com/get-categories")
             .then(response => {
 
                 response.data.unshift({
@@ -67,7 +67,7 @@ export function EditVideo() {
     // ✅ Load Video
     function loadVideo() {
 
-        axios.get(`http://localhost:5050/get-video/${params.id}`)
+        axios.get(`https://video-liberary.onrender.com/get-video/${params.id}`)
             .then(response => {
 
                 console.log("Video Response:", response.data);

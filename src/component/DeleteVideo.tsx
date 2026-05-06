@@ -16,7 +16,7 @@ export function DeleteVideo() {
     // It was causing the error because it wasn't being used.
 
     function LoadVideos() {
-        axios.get(`http://localhost:5050/get-video/${Params.id}`)
+        axios.get(`https://video-liberary.onrender.com/get-video/${Params.id}`)
             .then(response => {
                 setVideos(response.data);
             })
@@ -29,7 +29,7 @@ export function DeleteVideo() {
     }, []);
 
     function handleDeleteClick() {
-        axios.delete(`http://localhost:5050/delete-video/${Params.id}`)
+        axios.delete(`https://video-liberary.onrender.com/delete-video/${Params.id}`)
             .then(() => {
                 alert('Video Deleted');
                 navigate('/admin-dashboard');
