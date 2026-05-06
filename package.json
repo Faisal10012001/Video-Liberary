@@ -21,7 +21,7 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "formik": "^2.4.9",
-    "framer-motion": "^12.38.0",
+     "framer-motion": "^12.x.x",
     "mongodb": "^7.1.1",
     "react": "^19.2.4",
     "react-cookie": "^8.1.0",
