@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 // 🔹 Get Categories
 app.get("/get-categories", (req, res) => {
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -47,7 +47,7 @@ app.get("/get-categories", (req, res) => {
 // 🔹 Get Users
 app.get("/get-users", (req, res) => {
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -76,7 +76,7 @@ app.get("/get-users", (req, res) => {
 // 🔹 Get Admin
 app.get("/get-admin", (req, res) => {
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -105,7 +105,7 @@ app.get("/get-admin", (req, res) => {
 // 🔹 Get All Videos
 app.get("/get-videos", (req, res) => {
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -136,7 +136,7 @@ app.get("/get-video/:id", (req, res) => {
 
     const id = parseInt(req.params.id);
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -173,7 +173,7 @@ app.post("/register-user", (req, res) => {
         email: req.body.email
     };
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -213,7 +213,7 @@ app.post("/add-video", (req, res) => {
         category_id: parseInt(req.body.category_id)
     };
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -253,7 +253,7 @@ app.put("/edit-video/:id", (req, res) => {
         }
     };
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
@@ -284,7 +284,7 @@ app.delete("/delete-video/:id", (req, res) => {
 
     const id = parseInt(req.params.id);
 
-    mongoClient.connect("mongodb+srv://faisal:faisal123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
+    mongoClient.connect("mongodb+srv://faisal:faisal%40123@cluster0.awvhhxv.mongodb.net/video-project?retryWrites=true&w=majority&appName=Cluster0")
         .then(clientObj => {
 
             const database = clientObj.db("video-project");
