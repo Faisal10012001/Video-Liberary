@@ -8,6 +8,17 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Server is running successfully");
+});
+
+app.listen(5050, () => {
+    console.log("Server Started");
+});
+
 
 // 🔹 Get Categories
 app.get("/get-categories", (req, res) => {

@@ -25,7 +25,7 @@ export function AddVideo() {
             views: 0,
             category_id: 0
         },
-        onSubmit: (video) => {   // ✅ FIXED (onsubmit → onSubmit)
+        onSubmit: (video) => {   
             axios.post('https://video-liberary.onrender.com/add-video', video)
                 .then(() => {
                     console.log('Video Added Successfully');

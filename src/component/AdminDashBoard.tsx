@@ -39,7 +39,7 @@ export function AdminDashBoard() {
 
     function handleDelete(id: number) {
         if (confirm("Are you sure you want to delete this video?")) {
-            axios.delete(`http://localhost:5050/delete-video/${id}`)
+            axios.delete(`https://video-liberary.onrender.com/delete-video/${id}`)
                 .then(() => {
                     setVideos(videos.filter(video => video.video_id !== id));
                 });
