@@ -310,7 +310,8 @@ app.delete("/delete-video/:id", (req, res) => {
 });
 
 
-// 🔥 Start Server
-app.listen(5050, () => {
-    console.log("API Started at http://localhost:5050");
+const PORT = process.env.PORT || 5050;
+
+app.listen(PORT, () => {
+    console.log(`Server Started on ${PORT}`);
 });
