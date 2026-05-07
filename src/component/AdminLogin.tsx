@@ -13,7 +13,7 @@ export function AdminLogin() {
         },
         onSubmit: (admin) => {
             // Give the user some feedback that we are checking credentials
-            axios.get('https://video-liberary.onrender.com/get-admins') 
+            axios.get('https://video-liberary.onrender.com/get-admin') 
                 .then(response => {
                     let user = response.data.find((item: any) => item.admin_id === admin.admin_id);
                     
